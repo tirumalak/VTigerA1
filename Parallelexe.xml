@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite"  thread-count="2" parallel="tests">
+  <test name="TestOrg">
+    <classes>
+      <class name="vtigerCRMScenarios.CreateOrganizationModule_Test"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test name="TestCon">
+    <classes>
+      
+      <class name="vtigerCRMScenarios.CreateContactModule_Test"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

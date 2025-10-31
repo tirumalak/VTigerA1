@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Report configuration]]>
+    </line>
+    <line>
+      <![CDATA[Connected to Database]]>
+    </line>
+    <line>
+      <![CDATA[Configuration of parallel exe]]>
+    </line>
+    <line>
+      <![CDATA[Launching the browser]]>
+    </line>
+    <line>
+      <![CDATA[Login to the application]]>
+    </line>
+    <line>
+      <![CDATA[ContactWithSupportDate_TestTest Execution  started]]>
+    </line>
+    <line>
+      <![CDATA[ContactWithSupportDate_TestTest Execution  failed]]>
+    </line>
+    <line>
+      <![CDATA[Logout from the  application]]>
+    </line>
+    <line>
+      <![CDATA[Closing the browser]]>
+    </line>
+    <line>
+      <![CDATA[close the parallel Execution]]>
+    </line>
+    <line>
+      <![CDATA[Closed database connection]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-10-31T16:54:27 IST" name="Default suite" finished-at="2025-10-31T16:54:59 IST" duration-ms="32556">
+    <groups>
+      <group name="regreesion">
+        <method signature="CreateContactModule_Test.ContactWithSupportDate_Test()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" name="ContactWithSupportDate_Test" class="vtigerCRMScenarios.CreateContactModule_Test"/>
+      </group> <!-- regreesion -->
+    </groups>
+    <test started-at="2025-10-31T16:54:27 IST" name="Default test" finished-at="2025-10-31T16:54:59 IST" duration-ms="32556">
+      <class name="vtigerCRMScenarios.CreateContactModule_Test">
+        <test-method is-config="true" signature="ConnectToDB()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" started-at="2025-10-31T16:54:26 IST" name="ConnectToDB" finished-at="2025-10-31T16:54:27 IST" duration-ms="917" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Connected to Database]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ConnectToDB -->
+        <test-method is-config="true" signature="conParallelExe()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" started-at="2025-10-31T16:54:27 IST" name="conParallelExe" finished-at="2025-10-31T16:54:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Configuration of parallel exe]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- conParallelExe -->
+        <test-method is-config="true" signature="LaunchTheBrowser()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" started-at="2025-10-31T16:54:27 IST" name="LaunchTheBrowser" finished-at="2025-10-31T16:54:29 IST" duration-ms="2274" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Launching the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LaunchTheBrowser -->
+        <test-method is-config="true" signature="login()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" started-at="2025-10-31T16:54:29 IST" name="login" finished-at="2025-10-31T16:54:30 IST" duration-ms="1254" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Login to the application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="ContactWithSupportDate_Test()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" started-at="2025-10-31T16:54:30 IST" name="ContactWithSupportDate_Test" finished-at="2025-10-31T16:54:57 IST" duration-ms="27027" status="FAIL">
+          <exception class="org.openqa.selenium.NoAlertPresentException">
+            <message>
+              <![CDATA[no such alert
+  (Session info: chrome=141.0.7390.123)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c43e7f6ed4516d3e7950863307065ce1, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\RAJESH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51962/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c43e7f6ed4516d3e7950863307065ce1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=141.0.7390.123)
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c43e7f6ed4516d3e7950863307065ce1, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\RAJESH\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51962}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51962/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c43e7f6ed4516d3e7950863307065ce1
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:618)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:622)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.alert(RemoteWebDriver.java:1194)
+at GenericUtilities.WebDriverUtility.handleAlertPopupAndClick(WebDriverUtility.java:25)
+at vtigerCRMScenarios.CreateContactModule_Test.ContactWithSupportDate_Test(CreateContactModule_Test.java:316)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoAlertPresentException -->
+          <reporter-output>
+            <line>
+              <![CDATA[ContactWithSupportDate_TestTest Execution  started]]>
+            </line>
+            <line>
+              <![CDATA[ContactWithSupportDate_TestTest Execution  failed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ContactWithSupportDate_Test -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" started-at="2025-10-31T16:54:58 IST" name="logout" finished-at="2025-10-31T16:54:59 IST" duration-ms="1542" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Logout from the  application]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="closeTheBrowser()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" started-at="2025-10-31T16:54:59 IST" name="closeTheBrowser" finished-at="2025-10-31T16:54:59 IST" duration-ms="255" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closing the browser]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeTheBrowser -->
+        <test-method is-config="true" signature="closeparallelExecution()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" started-at="2025-10-31T16:54:59 IST" name="closeparallelExecution" finished-at="2025-10-31T16:54:59 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[close the parallel Execution]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeparallelExecution -->
+        <test-method is-config="true" signature="DisconnectWithTheDB()[pri:0, instance:vtigerCRMScenarios.CreateContactModule_Test@3b0090a4]" started-at="2025-10-31T16:54:59 IST" name="DisconnectWithTheDB" finished-at="2025-10-31T16:54:59 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Closed database connection]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- DisconnectWithTheDB -->
+      </class> <!-- vtigerCRMScenarios.CreateContactModule_Test -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
