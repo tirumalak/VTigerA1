@@ -15,6 +15,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.Status;
 
@@ -45,12 +46,12 @@ public class BaseClass {
 	//	UtilityObject.getTest().log(Status.INFO,"Configuration of parallel exe");
 	}
 
-	// @Parameters("browser")
+	 @Parameters("browser")
 	@BeforeClass
 	public void LaunchTheBrowser() throws Exception {
 		Reporter.log("Launching the browser",true);
 		//UtilityObject.getTest().log(Status.INFO,"Launching the browser");
-		String browser = p.fetchDataFromPropertyFile("browser");
+		String browser = System.getProperty("browser",p.fetchDataFromPropertyFile("browser"));
 
 		// Launch the browser
 		if (browser.equals("chrome")) {
@@ -71,16 +72,15 @@ public class BaseClass {
 	public void login() throws Exception {
 		Reporter.log("Login to the application",true);
 		//UtilityObject.getTest().log(Status.INFO,"Login to the application");
-		String username = p.fetchDataFromPropertyFile("username");
-		String password = p.fetchDataFromPropertyFile("password");
-		String url = p.fetchDataFromPropertyFile("url");
-		String timeouts = p.fetchDataFromPropertyFile("timeouts");
+		String username =System.getProperty("username",p.fetchDataFromPropertyFile("username"));
+		String password =System.getProperty("password",p.fetchDataFromPropertyFile("password"));
+		String url = System.getProperty("url",p.fetchDataFromPropertyFile("url"));
+		String timeouts = System.getProperty("timeouts",p.fetchDataFromPropertyFile("timeouts"));
 		wutil.waitForAnElementToLoad(driver, timeouts);
 		wutil.maximizeTheWindow(driver);
 		wutil.navigateToAppln(driver, url);
 		LoginPomPage l = new LoginPomPage(driver);
 		l.login(username, password);
-		System.out.println("error");
 	}
 
 	@AfterMethod
